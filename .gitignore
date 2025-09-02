@@ -1,0 +1,12 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/PlatformTools/FileContentIndex
+/.vs/PlatformTools/v17/ipch
+/OpenWhoAmi/x64/Debug
+/Debug
+/RegTlb/Debug
+/RegTlb/x64/Debug/RegTlb.tlog
+/RegTlb/x64/Debug
+/x64/Debug

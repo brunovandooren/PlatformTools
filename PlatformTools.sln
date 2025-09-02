@@ -1,9 +1,44 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36408.4 d17.14
+VisualStudioVersion = 17.14.36408.4
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OpenWhoAmi", "OpenWhoAmi\OpenWhoAmi.vcxproj", "{9037A2A5-628C-42D2-8E5E-CF8464A77C8D}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RegTlb", "RegTlb\RegTlb.vcxproj", "{7C027B8E-A98C-46AD-A012-097C7932A439}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{285BB979-E44E-4C99-9770-4A9A8BCB7E16}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Base", "Base", "{E55D3130-B214-48C9-AC55-F67DAB2F6157}"
+	ProjectSection(SolutionItems) = preProject
+		Shared\Array.h = Shared\Array.h
+		Shared\Exception.cpp = Shared\Exception.cpp
+		Shared\Exception.h = Shared\Exception.h
+		Shared\Handle.cpp = Shared\Handle.cpp
+		Shared\Handle.h = Shared\Handle.h
+		Shared\StringHelper.cpp = Shared\StringHelper.cpp
+		Shared\StringHelper.h = Shared\StringHelper.h
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IO", "IO", "{E8AC4191-D3A2-4B18-BC7C-09D66FD92761}"
+	ProjectSection(SolutionItems) = preProject
+		Shared\CommandLineArgs.cpp = Shared\CommandLineArgs.cpp
+		Shared\CommandLineArgs.h = Shared\CommandLineArgs.h
+		Shared\ConsoleHelper.cpp = Shared\ConsoleHelper.cpp
+		Shared\ConsoleHelper.h = Shared\ConsoleHelper.h
+		Shared\HKey.cpp = Shared\HKey.cpp
+		Shared\HKey.h = Shared\HKey.h
+		Shared\Transaction.cpp = Shared\Transaction.cpp
+		Shared\Transaction.h = Shared\Transaction.h
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "COM", "COM", "{C4B97972-8AD9-4DFC-968D-D4D46DDD641E}"
+	ProjectSection(SolutionItems) = preProject
+		Shared\TlbInfo.cpp = Shared\TlbInfo.cpp
+		Shared\TlbInfo.h = Shared\TlbInfo.h
+		Shared\TypeLibrary.cpp = Shared\TypeLibrary.cpp
+		Shared\TypeLibrary.h = Shared\TypeLibrary.h
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,9 +56,22 @@ Global
 		{9037A2A5-628C-42D2-8E5E-CF8464A77C8D}.Release|x64.Build.0 = Release|x64
 		{9037A2A5-628C-42D2-8E5E-CF8464A77C8D}.Release|x86.ActiveCfg = Release|Win32
 		{9037A2A5-628C-42D2-8E5E-CF8464A77C8D}.Release|x86.Build.0 = Release|Win32
+		{7C027B8E-A98C-46AD-A012-097C7932A439}.Debug|x64.ActiveCfg = Debug|x64
+		{7C027B8E-A98C-46AD-A012-097C7932A439}.Debug|x64.Build.0 = Debug|x64
+		{7C027B8E-A98C-46AD-A012-097C7932A439}.Debug|x86.ActiveCfg = Debug|Win32
+		{7C027B8E-A98C-46AD-A012-097C7932A439}.Debug|x86.Build.0 = Debug|Win32
+		{7C027B8E-A98C-46AD-A012-097C7932A439}.Release|x64.ActiveCfg = Release|x64
+		{7C027B8E-A98C-46AD-A012-097C7932A439}.Release|x64.Build.0 = Release|x64
+		{7C027B8E-A98C-46AD-A012-097C7932A439}.Release|x86.ActiveCfg = Release|Win32
+		{7C027B8E-A98C-46AD-A012-097C7932A439}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E55D3130-B214-48C9-AC55-F67DAB2F6157} = {285BB979-E44E-4C99-9770-4A9A8BCB7E16}
+		{E8AC4191-D3A2-4B18-BC7C-09D66FD92761} = {285BB979-E44E-4C99-9770-4A9A8BCB7E16}
+		{C4B97972-8AD9-4DFC-968D-D4D46DDD641E} = {285BB979-E44E-4C99-9770-4A9A8BCB7E16}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2AB871B1-E7BF-4819-91E1-C638BFAFA6FD}

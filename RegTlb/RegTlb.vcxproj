@@ -179,6 +179,10 @@
     <ClInclude Include="..\Shared\TypeLibrary.h" />
     <ClInclude Include="CommandLine.h" />
     <ClInclude Include="pch.h" />
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="RegTlb.rc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
